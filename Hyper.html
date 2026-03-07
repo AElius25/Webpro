@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODUL 3 - HTML</title>
+</head>
+<body>
+
+    <h1>MODUL 3 - HTML</h1>
+
+    <hr>
+
+    <h2>3.1 Struktur Dasar HTML</h2>
+    <p>Contoh struktur dasar HTML:</p>
+
+    <h3>My First Heading</h3>
+    <p>My first paragraph.</p>
+
+    <hr>
+
+    <h2>3.3 Heading</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <hr>
+
+    <h2>3.4 Hyperlink</h2>
+    <a href="https://www.google.co.id" target="_blank">Visit Google</a>
+
+    <hr>
+
+    <h2>3.5 Tabel Sederhana</h2>
+    <table border="1" width="80%">
+        <tr>
+            <th>Nama Lengkap</th>
+            <th>Kota Kelahiran</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>Jakarta</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Andi</td>
+            <td>Semarang</td>
+            <td>52</td>
+        </tr>
+        <tr>
+            <td>Rasyid</td>
+            <td>Surabaya</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Tabel dengan Colspan & Rowspan</h2>
+    <table border="1" width="80%">
+        <tr>
+            <th rowspan="2">Nama Lengkap</th>
+            <th colspan="2">Gelar Pendidikan</th>
+            <th rowspan="2">Age</th>
+        </tr>
+        <tr>
+            <th>Sarjana</th>
+            <th>Magister</th>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>S.Kom</td>
+            <td>M.Sc</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Andi</td>
+            <td>S.SiKom</td>
+            <td>M.T</td>
+            <td>52</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>3.6 Image</h2>
+    <img src="https://via.placeholder.com/300" width="300" alt="Contoh Gambar">
+    <p>Contoh gambar pada HTML</p>
+
+    <hr>
+
+    <h2>3.7 Audio</h2>
+    <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+        Browser tidak mendukung audio.
+    </audio>
+
+    <h2>Video</h2>
+    <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        Browser tidak mendukung video.
+    </video>
+
+    <hr>
+
+    <h2>3.8 Formulir Pendaftaran Praktikan</h2>
+
+    <center>
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td><b>Nama</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="nama_input" 
+                        placeholder="Input Nama" value="Praktikan" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Username</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="uname_input" 
+                        placeholder="Input Username" value="Praktikum" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Password</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="password" name="password_input" 
+                        placeholder="Input Password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Email</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="email" name="email_input" 
+                        placeholder="Input Email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Jenis Kelamin</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jk_input" value="Pria"> Pria
+                        <input type="radio" name="jk_input" value="Wanita"> Wanita
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Hobi</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="hobi_input" value="Renang"> Renang<br>
+                        <input type="checkbox" name="hobi_input" value="Bersepeda"> Bersepeda<br>
+                        <input type="checkbox" name="hobi_input" value="Memancing"> Memancing
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Jenjang Pendidikan</b></td>
+                    <td>:</td>
+                    <td>
+                        <select name="jp_input">
+                            <option selected>------Pilih------</option>
+                            <option>D3</option>
+                            <option>S1</option>
+                            <option>S2</option>
+                            <option>S3</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Kritik & Saran</b></td>
+                    <td>:</td>
+                    <td>
+                        <textarea rows="5" cols="30"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" align="right">
+                        <input type="button" value="Cancel">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+</body>
+</html>
