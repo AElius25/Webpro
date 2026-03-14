@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabungan Latihan Modul 3 Pemrograman Web</title>
+</head>
+<body>
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>Contoh Hyperlink: <a href="www.google.co.id"> Visit Google </a></p>
+
+    <hr> <h2>Tabel Data Biasa</h2>
+    <table width="80%" height="50%" border="1">
+        <tr>
+            <th>Nama Lengkap</th>
+            <th>Kota Kelahiran</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>Jakarta</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Andi</td>
+            <td>Semarang</td>
+            <td>52</td>
+        </tr>
+        <tr>
+            <td>Rasyid</td>
+            <td>Surabaya</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h2>Tabel dengan Rowspan & Colspan</h2>
+    <table width="80%" height="50%" border="1">
+        <tr>
+            <th rowspan="2">Nama Lengkap</th>
+            <th colspan="2">Gelar Pendidikan</th>
+            <th rowspan="2">Age</th>
+        </tr>
+        <tr>
+            <th> Sarjana </th>
+            <th> Magister </th>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>S.Kom</td>
+            <td>M.Sc</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Andi</td>
+            <td>S.SiKom</td>
+            <td>M.T</td>
+            <td>52</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Elemen Media</h2>
+    
+    <img src="wp (35).jpg" width="50%" height="50%"/>
+    <p>Ini Gambar Kincir Angin</p>
+
+    <h3>Contoh Audio</h3>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg"> 
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Contoh Video</h3>
+    <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg"> 
+        Your browser does not support HTML5 video.
+    </video>
+    <p>
+        Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+
+    <hr>
+
+    <center>
+        <h2>Formulir Pendaftaran Praktikan</h2>
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nama_id"><b>Nama:</b></label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nama_input" id="nama_id" placeholder="Input Nama" value="Praktikan" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="uname_id"><b>Username:</b></label></td>
+                    <td>:</td>
+                    <td><input type="text" name="uname_input" id="uname_id" placeholder="Input Username" value="Praktikum" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="password_id"><b>Password:</b></label></td>
+                    <td>:</td>
+                    <td><input type="password" name="password_input" id="password_id" placeholder="Input Password"></td>
+                </tr>
+                <tr>
+                    <td><label for="email_id"><b>Email:</b></label></td>
+                    <td>:</td>
+                    <td><input type="email" name="email_input" id="email_id" placeholder="Input Email"></td>
+                </tr>
+                <tr>
+                    <td><b>Jenis Kelamin:</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jk_input" id="pria" value="Pria">
+                        <label for="pria">Pria</label>
+                        <input type="radio" name="jk_input" id="wanita" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Hobi:</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="hobi_input" id="renang" value="Renang">
+                        <label for="renang">Renang</label><br>
+                        <input type="checkbox" name="hobi_input" id="bersepeda" value="Bersepeda">
+                        <label for="bersepeda">Bersepeda</label><br>
+                        <input type="checkbox" name="hobi_input" id="memancing" value="Memancing">
+                        <label for="memancing">Memancing</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="jp_id"><b>Jenjang Pendidikan:</b></label></td>
+                    <td>:</td>
+                    <td>
+                        <select name="jp_input" id="jp_id">
+                            <option value="" selected>—Pilih—</option>
+                            <option value="D3">Tamat D3</option>
+                            <option value="S1">Tamat S1</option>
+                            <option value="S2">Tamat S2</option>
+                            <option value="S3">Tamat S3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="kritik_saran"><b>Kritik & Saran:</b></label></td>
+                    <td>:</td>
+                    <td><textarea id="kritik_saran" name="kritik_saran" rows="5" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">
+                        <input type="button" value="Cancel" class="btn-cancel">
+                        <input type="submit" value="Submit" class="btn-submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+</body>
+</html>

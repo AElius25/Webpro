@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Praktikan</title>
+    
+    <style>
+        /* Menambahkan background pada body dan mengatur posisi di tengah */
+        body {
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Styling kotak form */
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+            color: #2c3e50;
+        }
+
+        /* Menggunakan tabel untuk merapikan layout mirip seperti di contoh modul */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px 0;
+            vertical-align: top;
+            font-size: 14px;
+        }
+
+        /* Kolom untuk Label (Nama, Username, dll) */
+        td:first-child {
+            width: 140px;
+            font-weight: bold;
+        }
+
+        /* Kolom untuk titik dua (:) */
+        td:nth-child(2) {
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Styling input teks, password, email, select, dan textarea */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 13px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #a1c4fd;
+            outline: none;
+        }
+
+        /* Mengatur susunan radio button dan checkbox */
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .radio-group-horizontal {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        /* Styling grup tombol Cancel & Submit */
+        .button-group {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px 18px;
+            margin-left: 5px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        button[type="reset"] {
+            background-color: #f8f9fa;
+        }
+
+        button[type="submit"] {
+            background-color: #e9ecef;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulir Pendaftaran Praktikan</h2>
+        
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" value="GANTI DENGAN NAMA KAMU" required></td>
+                </tr>
+                <tr>
+                    <td>NIM</td>
+                    <td>:</td>
+                    <td><input type="text" name="nim" value="GANTI DENGAN NIM KAMU" required></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>:</td>
+                    <td><input type="text" name="username" placeholder="Praktikum" style="background-color: #f1f1f1;"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" name="password" placeholder="........"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" placeholder="Input Email"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <div class="radio-group-horizontal">
+                            <label><input type="radio" name="jenis_kelamin" value="Pria"> Pria</label>
+                            <label><input type="radio" name="jenis_kelamin" value="Wanita" checked> Wanita</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>:</td>
+                    <td>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="hobi" value="Renang" checked> Gaming</label>
+                            <label><input type="checkbox" name="hobi" value="Bersepeda"> Bersepeda</label>
+                            <label><input type="checkbox" name="hobi" value="Memancing" checked> Memancing</label>
+                            <label><input type="checkbox" name="hobi" value="Memancing" checked> Touring</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenjang Pendidikan</td>
+                    <td>:</td>
+                    <td>
+                        <select name="pendidikan">
+                            <option value="">------Pilih------</option>
+                            <option value="D3">Tamat D3</option>
+                            <option value="S1">Tamat S1</option>
+                            <option value="S2">Tamat S2</option>
+                            <option value="S3">Tamat S3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kritik & Saran</td>
+                    <td>:</td>
+                    <td>
+                        <textarea name="kritik_saran" rows="5"></textarea>
+                        
+                        <div class="button-group">
+                            <button type="reset">Cancel</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
