@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Didik Weka Pratama — Portofolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-line"></div>
+    <div class="loader-text">Memuat<span class="dots">...</span></div>
+    <div class="loader-count" id="loaderCount">0%</div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-initial">D</span>
+      <span class="logo-name">AELius</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link" data-text="Tentang">Tentang</a></li>
+      <li><a href="#projects" class="nav-link" data-text="Proyek">Proyek</a></li>
+      <li><a href="#skills" class="nav-link" data-text="Keahlian">Keahlian</a></li>
+      <li><a href="#contact" class="nav-link" data-text="Kontak">Kontak</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">UI/UX Designer & Front-End Developer</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="hero-line" data-delay="0">Saya menciptakan</span>
+        <span class="hero-line italic" data-delay="100">pengalaman digital</span>
+        <span class="hero-line" data-delay="200">yang tak terlupakan.</span>
+      </h1>
+
+      <p class="hero-desc">
+        Berbasis di Purbalingga, Indonesia — mendesain antarmuka dan membangun web
+        yang memadukan estetika tinggi dengan fungsionalitas solid.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>Lihat Proyek</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Tahun Pengalaman</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">40+</span>
+        <span class="stat-label">Proyek Selesai</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">20+</span>
+        <span class="stat-label">Klien Puas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-text">Tentang Saya</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">
+              <div class="initials-display">DWP</div>
+            </div>
+            <div class="about-badge">
+              <svg viewBox="0 0 100 100" class="badge-ring">
+                <defs>
+                  <path id="circle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/>
+                </defs>
+                <text font-size="11.5">
+                  <textPath href="#circle">OPEN FOR WORK • FREELANCE • KOLABORASI •</textPath>
+                </text>
+              </svg>
+              <div class="badge-dot"></div>
+            </div>
+          </div>
+
+          <div class="about-quote">
+            <blockquote>
+              "Desain yang baik adalah<br/>
+              <em>solusi yang terlihat seperti seni.</em>"
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h2 class="about-title">
+            Halo, saya <em>Didik</em> —<br/>
+            desainer yang juga programmer.
+          </h2>
+          <p>
+            Saya percaya bahwa batas antara desain dan teknologi seharusnya tidak terasa.
+            Setiap piksel yang saya tempatkan memiliki tujuan, dan setiap baris kode
+            yang saya tulis memiliki makna di baliknya.
+          </p>
+          <p>
+            Dengan latar belakang di Informatika dan hasrat mendalam pada desain visual,
+            saya menjembatani dunia kreatif dan teknis untuk menghasilkan produk digital
+            yang tidak hanya indah — tetapi juga bekerja dengan sempurna.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-icon">📍</span>
+              <span>Purbalingga, Jawa Tengah</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon">🎓</span>
+              <span>S1 Informatika, Telkom University</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon">💼</span>
+              <span>Tersedia untuk Freelance</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon">🌐</span>
+              <span>Indonesia / Remote</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-outline download-cv" id="downloadCv">
+            <span>Unduh CV</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 3v8M4 7l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-text">Proyek Pilihan</span>
+      </div>
+
+      <div class="projects-header">
+        <h2 class="section-title">Karya yang<br/><em>mendefinisikan saya.</em></h2>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="semua">Semua</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ui">UI/UX</button>
+          <button class="filter-btn" data-filter="app">App</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Diisi via AJAX dari projects.php -->
+        <div class="projects-loading">
+          <div class="loading-spinner"></div>
+          <span>Memuat proyek...</span>
+        </div>
+      </div>
+
+      <div class="projects-more">
+        <button class="btn btn-ghost" id="loadMoreBtn">
+          <span>Muat Lebih Banyak</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span class="label-text">Keahlian</span>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-intro">
+          <h2 class="section-title">Teknologi &<br/><em>alat yang saya kuasai.</em></h2>
+          <p>Saya terus belajar dan mengasah kemampuan untuk menghadirkan solusi terbaik bagi setiap proyek.</p>
+        </div>
+
+        <div class="skills-content">
+          <!-- Skill bars diisi via AJAX dari skills.php -->
+          <div id="skillsContainer">
+            <div class="projects-loading">
+              <div class="loading-spinner"></div>
+              <span>Memuat keahlian...</span>
+            </div>
+          </div>
+
+          <div class="skills-tools">
+            <h3 class="tools-title">Alat & Platform</h3>
+            <div class="tools-grid">
+              <div class="tool-tag">Figma</div>
+              <div class="tool-tag">Adobe XD</div>
+              <div class="tool-tag">VS Code</div>
+              <div class="tool-tag">Git / GitHub</div>
+              <div class="tool-tag">MySQL</div>
+              <div class="tool-tag">Laravel</div>
+              <div class="tool-tag">WordPress</div>
+              <div class="tool-tag">Postman</div>
+              <div class="tool-tag">Notion</div>
+              <div class="tool-tag">Canva</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-bg">
+      <div class="contact-grain"></div>
+    </div>
+    <div class="container">
+      <div class="section-label light">
+        <span class="label-num">04</span>
+        <span class="label-text">Hubungi Saya</span>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h2 class="section-title light">
+            Punya proyek<br/>
+            <em>yang menarik?</em>
+          </h2>
+          <p class="contact-desc">
+            Mari kita bicara. Saya selalu terbuka untuk proyek baru,
+            kolaborasi kreatif, atau sekadar ngobrol tentang desain dan teknologi.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:raka@example.com" class="contact-link">
+              <span class="link-icon">✉</span>
+              <div>
+                <span class="link-label">Email</span>
+                <span class="link-value">raka@example.com</span>
+              </div>
+            </a>
+            <a href="https://wa.me/6281234567890" class="contact-link" target="_blank">
+              <span class="link-icon">💬</span>
+              <div>
+                <span class="link-label">WhatsApp</span>
+                <span class="link-value">+62 812-3456-7890</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/rakaandhika" class="contact-link" target="_blank">
+              <span class="link-icon">🔗</span>
+              <div>
+                <span class="link-label">LinkedIn</span>
+                <span class="link-value">linkedin.com/in/rakaandhika</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Nama Anda" required />
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input type="email" id="email" name="email" placeholder="email@anda.com" required />
+              <span class="field-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <select id="subject" name="subject">
+                <option value="">Pilih topik...</option>
+                <option value="project">Diskusi Proyek</option>
+                <option value="freelance">Pekerjaan Freelance</option>
+                <option value="collaboration">Kolaborasi</option>
+                <option value="other">Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang proyek Anda..." required></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-gold" id="submitBtn">
+              <span class="btn-text">Kirim Pesan</span>
+              <span class="btn-loading" style="display:none;">Mengirim...</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 8l12-5-5 12-2-5-5-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="form-success" id="formSuccess" style="display:none;">
+              <span>✓</span>
+              <p>Pesan terkirim! Saya akan menghubungi Anda segera.</p>
+            </div>
+            <div class="form-error-msg" id="formErrorMsg" style="display:none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="logo-initial">R</span>
+          <span class="logo-name">RAKA ANDHIKA</span>
+        </div>
+        <p class="footer-tagline">Merancang. Membangun. Menginspirasi.</p>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Didik Weka Pratama. Semua hak dilindungi.</span>
+        <div class="footer-socials">
+          <a href="#" class="social-link">GitHub</a>
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Dribbble</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
